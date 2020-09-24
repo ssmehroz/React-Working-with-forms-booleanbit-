@@ -15,6 +15,12 @@ class User extends Component {
           type: "text",
           placeholder: "Enter Your Name",
         },
+        validation: {
+          required: true,
+        },
+        valid: false,
+        touched: false,
+        validationMessage: "",
       },
 
       lastname: {
