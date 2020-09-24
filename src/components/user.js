@@ -29,15 +29,30 @@ class User extends Component {
         },
       },
 
-      something: {
-        element: "input",
+      message: {
+        element: "textarea",
         value: "",
         label: true,
-        labelText: "something",
+        labelText: "Message",
         config: {
-          name: "something_input",
-          type: "text",
-          placeholder: "Enter Your Lastname",
+          name: "message_input",
+          rows: 4,
+          cols: 36,
+        },
+      },
+
+      age: {
+        element: "select",
+        value: "",
+        label: true,
+        labelText: "Age",
+        config: {
+          name: "Age",
+          options: [
+            { val: "1", text: "10-20" },
+            { val: "2", text: "20-30" },
+            { val: "3", text: "30-40" },
+          ],
         },
       },
     },
